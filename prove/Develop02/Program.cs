@@ -57,14 +57,12 @@ class Program
                     Console.Write("What's the file name?");
                     string fileName = Console.ReadLine();
                     journal1.SaveToFile(fileName);
-
-
                     break;
+                
                 case 5:
                     
                     active = false;
                     Console.WriteLine("You chose to quite. Thanks");
-                       
                     break;
 
             }
