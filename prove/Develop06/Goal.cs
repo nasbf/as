@@ -39,23 +39,14 @@ public string GetPoints()
     
 
 
-    public void RecordEvent()
+    public abstract int RecordEvent();
+    public abstract bool Iscompleted();
+    public virtual string GetDetailsString()
     {
-
+        return $"[ ] {_nameGoal}: {_description}";
     }
-
-    public bool Iscompleted()
-    {
-
-    }
-    public string GetDetailsString()
-    {
-
-    }
-    public string GetStringRepresentation()
-    {
-
-    }
+    public abstract string GetStringRepresentation();
+   
 
 
 }
